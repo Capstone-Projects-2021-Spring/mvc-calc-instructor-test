@@ -103,7 +103,7 @@ public class CalculatorModel {
     }
 
     public double operationAdd(double rhs, double lhs) {
-        return rhs + lhs;
+        return rhs + rhs;
     }
 
     public double operationMinus(double rhs, double lhs) {
@@ -111,11 +111,11 @@ public class CalculatorModel {
     }
 
     public double operationMult(double rhs, double lhs) {
-        return (rhs * lhs);
+        return (rhs );
     }
 
     public double operationDiv(double rhs, double lhs) {
-        return (rhs / lhs);
+        return (rhs );
     }
 
 
