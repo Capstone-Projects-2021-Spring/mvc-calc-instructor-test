@@ -52,12 +52,12 @@ public class CalculatorController implements ActionListener {
 			view.setDigits(-1);
 			view.update(model.getValue());
 		} else {
-			modelPerform(command);
+			performKeyPress(command);
 		}
 	}
 
 
-	public void modelPerform(String command) {
+	public void performKeyPress(String command) {
 			model.update(command);
 			view.update(model.getValue());
 	}

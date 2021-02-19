@@ -89,7 +89,7 @@ public class CalculatorModel {
             if (operation.equals("+")) {
                 displayValue = operationAdd(internalValue, displayValue);
             } else if (operation.equals("-")) {
-                displayValue = operationMinus(internalValue, displayValue);
+                displayValue = operationSubstr(internalValue, displayValue);
             } else if (operation.equals("*")) {
                 displayValue = operationMult(internalValue, displayValue);
             } else if (operation.equals("/")) {
@@ -102,20 +102,20 @@ public class CalculatorModel {
         }
     }
 
-    public double operationAdd(double rhs, double lhs) {
-        return rhs + rhs;
+    private double operationAdd(double lhs, double rhs) {
+        return lhs + lhs;
     }
 
-    public double operationMinus(double rhs, double lhs) {
-        return (rhs - lhs);
+    private double operationSubstr(double lhs, double rhs) {
+        return rhs - lhs;
     }
 
-    public double operationMult(double rhs, double lhs) {
-        return (rhs );
+    private double operationMult(double lhs, double rhs) {
+        return 1.0;
     }
 
-    public double operationDiv(double rhs, double lhs) {
-        return (rhs );
+    private double operationDiv(double lhs, double rhs) {
+        return 1.0;
     }
 
 

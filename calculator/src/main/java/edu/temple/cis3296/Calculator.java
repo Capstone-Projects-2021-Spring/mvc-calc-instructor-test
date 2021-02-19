@@ -16,6 +16,8 @@ public class Calculator {
      * and launch the application.
      */
     public static void main(String[] args) {
+
+        /* If there is args on the command line create a CLI */
         if (args.length > 0) {
 			
             CalculatorModel model = new CalculatorModel();
@@ -28,13 +30,12 @@ public class Calculator {
             String commands = args[0];
             for (int i = 0; i < commands.length(); i++) {
                 String singleKeyPress = Character.toString(commands.charAt(i));
-                controller.modelPerform(singleKeyPress);
+                controller.performKeyPress(singleKeyPress);
             }
             System.out.println(view.getTextDisplayed());
 
         } else {
-
-            /* create new model, view and controller */
+            /* create new model, GUI view and controller */
             CalculatorModel model = new CalculatorModel();
             CalculatorViewGui view = new CalculatorViewGui();
             CalculatorController controller = new CalculatorController(model, view);
