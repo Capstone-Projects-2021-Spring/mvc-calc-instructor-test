@@ -103,11 +103,15 @@ public class CalculatorModel {
     }
 
     public double operationAdd(double lhs, double rhs) {
-        return lhs + rhs;
+        return lhs + lhs;
     }
 
     public double operationSubstr(double lhs, double rhs) {
+<<<<<<< Updated upstream
         return lhs - rhs;
+=======
+        return rhs - lhs;
+>>>>>>> Stashed changes
     }
 
     public double operationMult(double lhs, double rhs) {
