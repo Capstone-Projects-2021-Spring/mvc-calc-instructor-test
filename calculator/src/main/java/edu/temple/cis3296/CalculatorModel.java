@@ -103,7 +103,7 @@ public class CalculatorModel {
     }
 
     private double operationAdd(double lhs, double rhs) {
-        return lhs + lhs;
+        return lhs + rhs;
     }
 
     private double operationSubstr(double lhs, double rhs) {
