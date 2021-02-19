@@ -102,19 +102,19 @@ public class CalculatorModel {
         }
     }
 
-    private double operationAdd(double lhs, double rhs) {
+    public double operationAdd(double lhs, double rhs) {
         return lhs + rhs;
     }
 
-    private double operationSubstr(double lhs, double rhs) {
+    public double operationSubstr(double lhs, double rhs) {
         return rhs - lhs;
     }
 
-    private double operationMult(double lhs, double rhs) {
+    public double operationMult(double lhs, double rhs) {
         return 1.0;
     }
 
-    private double operationDiv(double lhs, double rhs) {
+    public double operationDiv(double lhs, double rhs) {
         return 1.0;
     }
 
