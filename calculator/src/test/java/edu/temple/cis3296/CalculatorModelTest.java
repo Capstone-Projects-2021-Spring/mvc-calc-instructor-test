@@ -29,7 +29,12 @@ public class CalculatorModelTest {
 	@Test
 	public void shouldSubstrTwoAndTwo(){
 		assertEquals(0.0, calc.operationSubstr(2.0, 2.0), 0.1);
-	} 
+	}
+	
+	@Test
+	public void shouldSubstrTwoAndOne(){
+		assertEquals(1.0, calc.operationSubstr(2.0, 1.0), 0.1);
+	}
 
 	@Test
 	public void shouldMultOneByOne(){
