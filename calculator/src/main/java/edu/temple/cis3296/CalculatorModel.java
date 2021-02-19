@@ -107,7 +107,7 @@ public class CalculatorModel {
     }
 
     public double operationSubstr(double lhs, double rhs) {
-        return (lhs - rhs);
+        return lhs - rhs;
     }
 
     public double operationMult(double lhs, double rhs) {
